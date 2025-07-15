@@ -1,23 +1,29 @@
+## 📝 项目简介 / Project Overview
 
-#本项目基于 CycleISP (CVPR 2020 Oral) 修改，提供了一个无需依赖 lycon、可直接运行的 Jupyter Notebook，用于从干净图像生成 ISP 模拟噪声图像。This notebook is a modified version of the [CycleISP (CVPR 2020 Oral)] project, with lycon dependency removed. It allows users to directly generate synthetic ISP noise from clean RGB images.#
+本项目基于 CycleISP (CVPR 2020 Oral) 修改，提供了一个无需依赖 `lycon`、可直接运行的 Jupyter Notebook，用于从干净图像生成 ISP 模拟噪声图像。  
+This notebook is a modified version of the [CycleISP (CVPR 2020 Oral)] project, with the `lycon` dependency removed. It allows users to directly generate synthetic ISP noise from clean RGB images.
 
+---
 
-#✅ 移除无法安装的 lycon 库，增强兼容性
-Removed lycon for easier installation and compatibility
+## ✅ 主要改动 / Key Modifications
 
-✅ 提供了开箱即用的 Jupyter Notebook，用于直接生成噪声图像
-Provided a ready-to-run Jupyter notebook for ISP noise generation
+- ✅ 移除无法安装的 `lycon` 库，增强兼容性  
+  Removed `lycon` for easier installation and compatibility
 
-✅ 可配置输入图像目录、输出图像目录和模型权重路径
-Input/output directories and model path are easily configurable#
+- ✅ 提供了开箱即用的 Jupyter Notebook，用于直接生成噪声图像  
+  Provided a ready-to-run Jupyter notebook for ISP noise generation
 
+- ✅ 可配置输入图像目录、输出图像目录和模型权重路径  
+  Input/output directories and model path are easily configurable
 
+---
 
-#
-请根据你本地环境，修改以下三个变量：
-Please modify the following variables in the notebook according to your local paths:
-#
+## ⚙️ 参数设置 / Parameter Configuration
 
+请根据你的本地环境，修改以下三个变量：  
+Please modify the following variables in the notebook according to your local setup:
+
+```python
 # 输入图像目录（干净的 RGB 图像）
 # Directory containing clean RGB images
 input_dir = '/data/C_zr/clip vib ai project/kaggle/input/SIDD_patches/val/groundtruth'
